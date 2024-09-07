@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 3D Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="root">
+    <div class="wrapper">
+      <div class="cover cover-left"></div>
+      <div class="cover cover-right turn"></div>
+      
+      <div class="book">
+        <!-- Profile page -->
+        <div class="book-page page-left">
+            <div class="profile-page">
+                <img src="FB_IMG_17068106266395321.jpg" alt="">
+                <h1>Kelvin Jefwa</h1>
+                <h3>Web Designer</h3>
+
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-gmail'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp-square'></i></a>
+                </div>
+
+                <p>"Hi, I'm Kelvin Jefwa, a dedicated Web Designer committed to creating impactful websites tailored to your needs.
+                    With strong, versatile skills, I ensure your online presence is both visually appealing and highly functional."</p>
+
+                <div class="btn-box">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#" class="btn contact-me">Contact Me</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page with Work Experience (front) and Education (back) -->
+        <div class="book-page page-right" id="turn-1">
+            <div class="page-front">
+                <h1 class="title">My Skills</h1>
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <h3>Front-End</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-html5'></i>HTML</span>
+                                <span><i class='bx bxl-css3'></i>CSS</span>
+                                <span><i class='bx bxl-javascript'></i>Javascript</span>
+                                <span><i class='bx bxl-angular'></i>Angular</span>
+                                <span><i class='bx bxl-react'></i>React</span>
+                                <span><i class='bx bxl-bootstrap'></i>Bootstrap</span>
+                                <span><i class='bx bxl-tailwind-css'></i>Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="skills-content">
+                            <h3>Back-End</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-python'></i>Python</span>
+                                <span><i class='bx bxl-java'></i>Java</span>
+                                <span><i class='bx bxl-php'></i>PHP</span>
+                            </div>
+                        </div>
+                        <div class="skills-content">
+                            <h3>UI/UX Design</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-figma'></i>Figma</span>
+                            </div>
+                        </div>
+                        <span class="number-page">1</span>
+                        <span class="nextprev-btn" data-page="turn-1"><i class='bx bx-chevron-right'></i></span>
+                    </div>
+            </div>
+
+            <div class="page-back">
+                <h1 class="title">My Services</h1>
+                <div class="service-box">
+                    <div class="service-content">
+                        <i class='bx bx-code'></i>
+                        <h3>Web Development</h3>
+                        <p>Designing & Deploying</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-content">
+                        <i class='bx bxs-paint'></i>
+                        <h3>Creative Designing</h3>
+                        <p>Designing through creativity</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-content">
+                        <i class='bx bx-bar-chart-alt'></i>
+                        <h3>Digital Marketing</h3>
+                        <p>Marketing strategies</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <span class="number-page">2</span>
+                <span class="nextprev-btn back" data-page="turn-1"><i class='bx bx-chevron-left'></i></span>
+            </div>
+            
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    
+    <script>
+        // Flip the page when clicked
+        document.querySelector('.book-page.page-right').addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+        
+    </script>
+</body>
+</html>
